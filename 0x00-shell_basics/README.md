@@ -9,3 +9,4 @@ The file 7-movethatfile : move /tmp/betty to /tmp/my_first_directory/
 The file 8-firstdelete : delete the previouslly moved betty file
 The file 9-firstdirdeletion : deletes /tmp/my_first_directory
 The file 10-back : returns the previous directory
+The file 11-lists : list all files in curent , parrent and /boot directory
