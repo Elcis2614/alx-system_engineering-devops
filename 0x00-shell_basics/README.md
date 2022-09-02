@@ -6,3 +6,5 @@ The file 4-listmorefiles : just like the file 3 , but including hidden files
 The file  5-listfilesdigitonly : displays current directories' content in long format, with user group IDs numerically,including hidden files
 The file 6-firstdirectory : creates my_first_directory in /tmp/
 The file 7-movethatfile : move /tmp/betty to /tmp/my_first_directory/
+The file 8-firstdelete : delete the previouslly moved betty file
+
