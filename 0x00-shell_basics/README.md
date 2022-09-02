@@ -4,4 +4,5 @@ The file 2-bring_me_home : changes the working directory to the user’s home di
 The file 3-listfiles : display the content of the current directory in long format
 The file 4-listmorefiles : just like the file 3 , but including hidden files
 The file  5-listfilesdigitonly : displays current directories' content in long format, with user group IDs numerically,including hidden files
+The file 6-firstdirectory : creates my_first_directory in /tmp/
 
