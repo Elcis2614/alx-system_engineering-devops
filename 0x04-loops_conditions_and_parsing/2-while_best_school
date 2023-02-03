@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#This code prints the string ten times
+x="BestSchool"
+i=1
+while true; do
+	echo $x
+	if [ $i -ge 10 ]; then
+		break
+	else
+		((i=i+1))
+	fi
+done
