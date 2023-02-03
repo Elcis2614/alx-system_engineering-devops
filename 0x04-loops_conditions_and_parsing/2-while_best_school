@@ -3,8 +3,8 @@
 x="Best School"
 i=1
 while true; do
-	echo $x
-	if [ $i -ge 10 ]; then
+	echo "$x"
+	if [ "$i" -ge 10 ]; then
 		break
 	else
 		((i=i+1))
