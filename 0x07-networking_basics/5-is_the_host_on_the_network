@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-cat "$1"
+#pings the ip adress passed to it
+if [ $1 ]; then
+	ping -c 5 "$1"
+else
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+fi
