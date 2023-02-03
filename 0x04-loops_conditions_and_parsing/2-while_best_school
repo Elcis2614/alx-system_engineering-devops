@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #This code prints the string ten times
-x="BestSchool"
+x="Best School"
 i=1
 while true; do
 	echo $x
