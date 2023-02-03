@@ -1,0 +1,1 @@
+More on Shell sturcture
