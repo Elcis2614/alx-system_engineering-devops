@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This is my first script on network
+netstat -lp
