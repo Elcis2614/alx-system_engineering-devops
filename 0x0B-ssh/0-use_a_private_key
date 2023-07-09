@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# usign the private key location to connect to the server
 ssh -i ~/.ssh/school 'ubuntu'@'133177-web-01'
