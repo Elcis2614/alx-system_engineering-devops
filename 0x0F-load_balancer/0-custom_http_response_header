@@ -5,9 +5,9 @@ line="add_header Served-By $HOSTNAME;"
 previous="location \/ {"
 replace="location \/ {\\n\\t\\t$comment\\n\\t\\t$line"
 location="/etc/nginx/sites-enabled/default"
-sudo apt-get update
-sudo apt-get install nginx
-sudo systemctl enable nginx
-sudo ufw allow 'Nginx HTTP'
-sudo sed -i "s/$previous/$replace/" $location
-sudo systemctl restart nginx
+apt-get update
+apt-get install nginx
+systemctl enable nginx
+ufw allow 'Nginx HTTP'
+sed -i "s/$previous/$replace/" $location
+systemctl restart nginx
