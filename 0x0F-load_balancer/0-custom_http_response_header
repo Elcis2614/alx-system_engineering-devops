@@ -5,6 +5,5 @@ line="add_header Served-By $HOSTNAME;"
 previous="location \/ {"
 replace="location \/ {\\n\\t\\t$comment\\n\\t\\t$line"
 location="/etc/nginx/sites-enabled/default"
-apt-get update
 apt-get install nginx
 sed -i "s/$previous/$replace/" $location
