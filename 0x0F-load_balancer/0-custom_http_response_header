@@ -7,5 +7,7 @@ replace="location \/ {\\n\\t\\t$comment\\n\\t\\t$line"
 location="/etc/nginx/sites-enabled/default"
 sudo apt-get update
 sudo apt-get install nginx
-sudo service nginx start
+sudo systemctl enable nginx
+sudo ufw allow 'Nginx HTTP'
 sudo sed -i "s/$previous/$replace/" $location
+sudo systemctl restart nginx
