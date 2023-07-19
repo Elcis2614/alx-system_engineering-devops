@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # usign the private key location to connect to the server and configure the header
 comment="#This customs the header by adding one more information"
-line="X-Served-By"
+line="add_header Served-By $HOSTNAME;"
 previous="location \/ {"
-replace="location \/ {\\n\\t\\t$comment\\n\\t\\t$line $HOSTNAME ;"
+replace="location \/ {\\n\\t\\t$comment\\n\\t\\t$line"
 location="/etc/nginx/sites-enabled/default"
 sed -i s/$previous/$replace/ $location
