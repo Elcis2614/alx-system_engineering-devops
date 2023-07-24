@@ -21,8 +21,11 @@ if __name__ == "__main__":
             break
     tasks = []
     for a_dict in data:
-            if (a_dict["userId"] == cust_id):
-                tasks.append({"task": a_dict["title"], "completed": a_dict["completed"], "username": custName})
-                
+        if (a_dict["userId"] == cust_id):
+            tasks.append({
+                "task": a_dict["title"],
+                "completed": a_dict["completed"],
+                "username": custName})
+
     with open('{}.json'.format(cust_id), 'w') as mFile:
         json.dump({cust_id: tasks}, mFile)
