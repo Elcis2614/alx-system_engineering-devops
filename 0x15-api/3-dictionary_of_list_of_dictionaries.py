@@ -25,11 +25,11 @@ if __name__ == "__main__":
                 "username": userDict[userId],
                 "task": a_dict["title"],
                 "completed": a_dict["completed"]})
-        else :
+        else:
             allDict[userId] = [{
                 "username": userDict[userId],
                 "task": a_dict["title"],
                 "completed": a_dict["completed"]}]
-        
+
     with open('todo_all_employees.json', 'w') as mFile:
         json.dump(allDict, mFile)
