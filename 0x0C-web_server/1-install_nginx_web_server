@@ -4,4 +4,4 @@ apt-get update
 apt-get -y install nginx
 systemctl start nginx
 ufw allow 'Nginx HTTP'
-bash "echo 'Hello word!' > /var/www/html/index*.html"
+bash "echo 'Hello Word!' > /var/www/html/index*.html"
