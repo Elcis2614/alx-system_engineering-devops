@@ -2,8 +2,8 @@
 """ Conatains a function that retrieve reddit API data without
     authentication """
 
-import requests
 import json
+import requests
 
 
 def number_of_subscribers(subred):
