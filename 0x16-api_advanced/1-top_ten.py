@@ -17,5 +17,7 @@ def top_ten(subred):
             posts = response.json()['data']['children']
             for i in range(10):
                 print(posts[i]['data']['title'])
+        else:
+            print("None")
     except Exception:
-        print(None)
+        print("None")
