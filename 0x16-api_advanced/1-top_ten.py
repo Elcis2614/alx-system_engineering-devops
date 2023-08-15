@@ -20,4 +20,4 @@ def top_ten(subred):
         else:
             return None
     except Exception:
-        return None
+        print(None)
