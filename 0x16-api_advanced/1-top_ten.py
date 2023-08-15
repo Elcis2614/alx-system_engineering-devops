@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Conatains a function that retrieve reddit API data without
-    authentication """
+authentication """
 
 import json
 import praw
@@ -20,5 +20,5 @@ def top_ten(subred):
 
         for post in posts:
             print(post.title)
-    except praw.exceptions.RedditAPIException :
+    except praw.exceptions.RedditAPIException:
         print("None")
