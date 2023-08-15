@@ -18,6 +18,6 @@ def top_ten(subred):
             for post in posts:
                 print(post['data']['title'])
         else:
-            return None
+            print(None)
     except Exception:
         print(None)
