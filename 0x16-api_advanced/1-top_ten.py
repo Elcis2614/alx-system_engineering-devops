@@ -14,7 +14,7 @@ def top_ten(subred):
         url = 'https://www.reddit.com/r/{}/top.json'.format(subred)
         response = requests.get(url, headers=headers)
         if response.status_code == 200:
-            posts = response.json()['data']['children'][:10]
+            posts = response.json()['data']['children'][:11]
             for post in posts:
                 print(post['data']['title'])
         else:
