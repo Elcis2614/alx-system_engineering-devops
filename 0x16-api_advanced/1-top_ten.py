@@ -1,24 +1,23 @@
 #!/usr/bin/python3
 """ Conatains a function that retrieve reddit API data without
-authentication """
+    authentication """
 
 import json
-import praw
+import requests
 
 
 def top_ten(subred):
     """ queries the Reddit API and prints the titles of
     the first 10 hot posts listed for a given subreddit"""
-
-    reddit = praw.Reddit(
-            client_id='Scdg-XXJgMbMrM2mvkISng',
-            client_secret='eB0QJ65vWg-BoNwlghrWLQbzAHp2Ew',
-            user_agent='MyAPI/0.0.1')
+    headers = {'User-Agent': 'MyAPI/0.0.1'}
     try:
-        subreddit = reddit.subreddit(subred)
-        posts = subreddit.hot(limit=10)
-
-        for post in posts:
-            print(post.title)
-    except praw.exceptions.RedditAPIException:
+        url = 'https://www.reddit.com/r/{}/top.json?limit=10'.format(subred)
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            posts = response.json()['data']['children']
+            for post in posts:
+                print(post['data']['title'])
+        else:
+            print("None")
+    except Exception:
         print("None")
