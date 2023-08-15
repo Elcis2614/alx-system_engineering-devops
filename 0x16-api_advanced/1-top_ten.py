@@ -9,6 +9,7 @@ import praw
 def top_ten(subred):
     """ queries the Reddit API and prints the titles of
     the first 10 hot posts listed for a given subreddit"""
+
     reddit = praw.Reddit(
             client_id='Scdg-XXJgMbMrM2mvkISng',
             client_secret='eB0QJ65vWg-BoNwlghrWLQbzAHp2Ew',
