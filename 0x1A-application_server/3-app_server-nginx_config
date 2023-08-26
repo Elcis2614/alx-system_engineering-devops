@@ -1,0 +1,15 @@
+# configuring nginx with another location endpoint
+server {
+
+        listen 80;
+        server_name 54.82.179.188 127.0.0.1;
+
+        location /airbnb-dynamic {
+                include proxy_params;
+                proxy_pass http://127.0.0.1:5001/;
+        }
+        location / {
+                include proxy_params;
+                proxy_pass http://127.0.0.1:5000/;
+        }
+}
